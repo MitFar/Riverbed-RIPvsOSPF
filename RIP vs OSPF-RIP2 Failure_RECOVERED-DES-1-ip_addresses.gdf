@@ -1,0 +1,66 @@
+# 
+# Purpose:   Contains IP address information for all active 
+#            interfaces in the current network model.
+#            (created by exporting this information from the model.)
+# 
+
+# Node Name: Logical Network.node_0
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.1.1        255.255.255.0    Logical Network.node_0 <-> node_5
+   IF3                      192.0.2.1        255.255.255.0    Logical Network.node_0 <-> node_1
+
+
+# Node Name: Logical Network.node_1
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.2.2        255.255.255.0    Logical Network.node_0 <-> node_1
+   IF3                      192.0.0.2        255.255.255.252  Logical Network.node_1 <-> node_2
+   new_IF4                  192.0.3.1        255.255.255.0    Logical Network.node_5 <-> node_1
+
+
+# Node Name: Logical Network.node_2
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.0.1        255.255.255.252  Logical Network.node_1 <-> node_2
+   IF3                      192.0.0.14       255.255.255.252  Logical Network.node_6 <-> node_2
+   new_IF4                  192.0.0.6        255.255.255.252  Logical Network.node_2 <-> node_3
+
+
+# Node Name: Logical Network.node_3
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.0.10       255.255.255.252  Logical Network.node_4 <-> node_3
+   IF3                      192.0.0.5        255.255.255.252  Logical Network.node_2 <-> node_3
+   new_IF4                  192.0.0.18       255.255.255.252  Logical Network.node_3 <-> node_7
+
+
+# Node Name: Logical Network.node_4
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.4.1        255.255.255.0    Logical Network.node_7 <-> node_4
+   IF3                      192.0.0.9        255.255.255.252  Logical Network.node_4 <-> node_3
+
+
+# Node Name: Logical Network.node_5
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.1.2        255.255.255.0    Logical Network.node_0 <-> node_5
+   IF3                      192.0.5.1        255.255.255.0    Logical Network.node_5 <-> node_6
+   new_IF4                  192.0.3.2        255.255.255.0    Logical Network.node_5 <-> node_1
+
+
+# Node Name: Logical Network.node_6
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.5.2        255.255.255.0    Logical Network.node_5 <-> node_6
+   IF3                      192.0.6.1        255.255.255.0    Logical Network.node_6 <-> node_7
+   new_IF4                  192.0.0.13       255.255.255.252  Logical Network.node_6 <-> node_2
+
+
+# Node Name: Logical Network.node_7
+#  Iface Name            IP Address       Subnet Mask      Connected Link
+#  ----------            ---------------  ---------------  ----------------
+   IF2                      192.0.6.2        255.255.255.0    Logical Network.node_6 <-> node_7
+   IF3                      192.0.4.2        255.255.255.0    Logical Network.node_7 <-> node_4
+   new_IF4                  192.0.0.17       255.255.255.252  Logical Network.node_3 <-> node_7
